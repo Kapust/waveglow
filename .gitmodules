@@ -1,5 +1,3 @@
 [submodule "tacotron2"]
 	path = tacotron2
-	url = http://github.com/NVIDIA/tacotron2
-[submodule "/waveglow"]
-	url = https://github.com/Kapust/tacotron2
+	url = http://github.com/Kapust/tacotron2
