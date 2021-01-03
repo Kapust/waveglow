@@ -1,7 +1,7 @@
 {
     "train_config": {
         "fp16_run": true,
-        "output_directory": "/content/drive/My Drive/results/checkpoint",
+        "output_directory": "/content/drive/My Drive/WaveGlow/checkpoint",
         "epochs": 100000,
         "learning_rate": 1e-4,
         "sigma": 1.0,
