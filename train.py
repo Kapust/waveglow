@@ -159,6 +159,8 @@ if __name__ == "__main__":
                         help='rank of process for distributed')
     parser.add_argument('-g', '--group_name', type=str, default='',
                         help='name of group for distributed')
+    parser.add_argument('-cp', '--checkpoint_path', type=str, default='',
+                        help='name of group for distributed')
     args = parser.parse_args()
 
     # Parse configs.  Globals nicer in this case
@@ -166,6 +168,8 @@ if __name__ == "__main__":
         data = f.read()
     config = json.loads(data)
     train_config = config["train_config"]
+    if args.checkpoint_path:
+        train_config["checkpoint_path"] = args.checkpoint_path
     global data_config
     data_config = config["data_config"]
     global dist_config
