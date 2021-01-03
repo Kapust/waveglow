@@ -8,7 +8,7 @@
         "iters_per_checkpoint": 1000,
         "batch_size": 12,
         "seed": 1234,
-        "checkpoint_path": "/content/drive/My Drive/results/checkpoint/waveglow_88000",
+        "checkpoint_path": "",
         "with_tensorboard": false
     },
     "data_config": {
